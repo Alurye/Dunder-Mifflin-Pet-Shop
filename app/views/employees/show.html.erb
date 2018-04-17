@@ -1,0 +1,9 @@
+<h1>Employee</h1>
+
+<p> <%= @employee.first_name + ' ' + @employee.last_name %> </p>
+<p> <%= @employee.alias %> </p>
+<p> <%= @employee.title %></p>
+<p> <%= @employee.office %></p>
+<p> <%= image_tag @employee.img_url if @employee.img_url %></p>
+<p> <%= @employee.dog.name %></p>
+<p> <%= link_to "Home", employees_path %> | <%= link_to "Edit", edit_employee_path %> </p>
